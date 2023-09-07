@@ -1,23 +1,16 @@
 import "./App.css";
-import { Currencies } from "./Pages/Currencies";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Items } from "./Pages/Items";
-
-const router = createBrowserRouter([
-  {
-    path: "/items",
-    element: <Items />,
-  },
-  {
-    path: "/currencies",
-    element: <Currencies />,
-  },
-]);
+import { Dashboard } from "./Components/Dashboard";
+import { BrowserRouter } from "react-router-dom";
+import { RouterController } from "./Components/RouterController";
 
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <Dashboard>
+          <RouterController />
+        </Dashboard>
+      </BrowserRouter>
     </div>
   );
 }

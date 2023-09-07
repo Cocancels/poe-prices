@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
-import { chaosId, divineEquivalent, divineId } from "../utils";
-import { chaosImg, divineImg } from "../utils/consts";
-import { useState } from "react";
+import { chaosId, chaosImg, divineId, divineImg } from "../utils/consts";
+import { divineEquivalent } from "../utils/divineEquivalent";
 
 interface TablePricesProps {
   divinePrice: any;
