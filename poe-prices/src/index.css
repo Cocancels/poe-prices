@@ -4,6 +4,7 @@
 
 * {
   font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
 }
 
 body {
@@ -29,6 +30,10 @@ body {
 
 .h-40-px {
   height: 40px;
+}
+
+.dom-container {
+  height: calc(100vh - 80px);
 }
 
 a {
